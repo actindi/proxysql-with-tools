@@ -14,7 +14,7 @@ $ docker run -d \
 -p 16032:6032 \
 -p 16033:6033 \
 -v /path/to/proxysql.cnf:/etc/proxysql.cnf \
-actindi/proxysql-tool
+actindi/proxysql-with-tools
 ```
 
 ### Setting ProxySQL with environment variables 
@@ -29,7 +29,7 @@ $ docker run -d \
 -e MYSQL_PASSWORD=hoge \
 -e READ_ONLY_CHECK_TYPE=read_only \
 --entrypoint /bin/sh \
-actindi/proxysql-tool \
+actindi/proxysql-with-tools \
 -c "envsubst < /var/lib/proxysql/proxysql-cnf.template > /etc/proxysql.cnf && cat /etc/proxysql.cnf && proxysql -f -D /var/lib/proxysql"
 ```
 
