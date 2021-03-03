@@ -14,7 +14,7 @@ $ docker run -d \
 -p 16032:6032 \
 -p 16033:6033 \
 -v /path/to/proxysql.cnf:/etc/proxysql.cnf \
-actindi/proxysql-with-tools
+ghcr.io/actindi/proxysql-with-tools:latest
 ```
 
 ### Setting ProxySQL with environment variables 
