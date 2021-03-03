@@ -29,11 +29,11 @@ $ docker run -d \
 -e MYSQL_PASSWORD=hoge \
 -e READ_ONLY_CHECK_TYPE=read_only \
 --entrypoint /bin/sh \
-actindi/proxysql-with-tools \
+ghcr.io/actindi/proxysql-with-tools:latest \
 -c "envsubst < /var/lib/proxysql/proxysql-cnf.template > /etc/proxysql.cnf && cat /etc/proxysql.cnf && proxysql -f -D /var/lib/proxysql"
 ```
 
-### Sample proxysql-cnf.template file (i.e. /path/to/proxysql-cnf.template listed above)
+### Sample proxysql-cnf.template file (i.e. `/path/to/proxysql-cnf.template` listed above)
 
 ```
 datadir="/var/lib/proxysql"
