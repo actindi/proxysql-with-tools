@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - master
+      - 42631-publish-to-ghcr
     tags:
       - '[0-9]+.[0-9]+.[0-9]+'
 jobs:
