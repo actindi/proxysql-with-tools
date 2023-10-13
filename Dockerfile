@@ -2,7 +2,7 @@ ARG PROXYSQL_VERSION="2.0.17"
 FROM ubuntu:latest
 
 ARG PROXYSQL_VERSION
-LABEL auther="actindi Inc."
+LABEL author="actindi Inc."
 LABEL maintainer="actindi Inc. <dev@actindi.net>"
 LABEL proxysql="${PROXYSQL_VERSION}"
 LABEL description="ProxySQL with tools."
