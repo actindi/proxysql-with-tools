@@ -12,8 +12,6 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
-      - name: Setup custom version
-        run: echo "DOCKER_IMAEG_VERSION=2.0.17.2" >> $GITHUB_ENV
       - name: Push to GitHub Container Registry
         uses: docker/build-push-action@v1
         with:
@@ -21,4 +19,4 @@ jobs:
           password: ${{ secrets.GHCR_TOKEN }}
           registry: ghcr.io
           repository: actindi/proxysql-with-tools
-          tags: ${{ env.DOCKER_IMAEG_VERSION }}
+          tag_with_ref: true
