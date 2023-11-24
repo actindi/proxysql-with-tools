@@ -1,3 +1,4 @@
+This repository has reached its End of Life (EOL). The fork can be found here. https://github.com/actindi-dev/proxysql-with-tools2
 
 ## Overview
 
